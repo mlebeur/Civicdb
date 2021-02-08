@@ -1,0 +1,12 @@
+{
+    "version": "0.2",
+    "requires" : ["pandas"],
+    "dumper" : {
+        "data_url" : []
+        "uncompress" : false
+    },
+    "uploader" : {
+        "parser" : "parser:load_Civicdb",
+        "on_duplicates" : "error"
+    }
+}
