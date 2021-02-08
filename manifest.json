@@ -6,7 +6,7 @@
         "uncompress" : false
     },
     "uploader" : {
-        "parser" : "parser:load_Civicdb",
+        "parser" : "parser:load_Civic",
         "on_duplicates" : "error"
     }
 }
