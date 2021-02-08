@@ -2,7 +2,7 @@
     "version": "0.2",
     "requires" : ["pandas"],
     "dumper" : {
-        "data_url" : []
+        "data_url" : [],
         "uncompress" : false
     },
     "uploader" : {
