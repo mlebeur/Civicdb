@@ -7,7 +7,7 @@ def load_Civic(data_folder):
     infile = os.path.abspath("/opt/biothings/GRCh37/Civicdb/ClinicalEvidenceSummaries.tsv")
     assert os.path.exists(infile)
     dat = pandas.read_csv(infile,sep="\t",squeeze=True,quoting=csv.QUOTE_NONE)
-    dat = dat.drop(["start2", "stop2", "asco_abstract_id"]).to_dict(orient='records')
+    dat = dat.drop(columns=["start2", "stop2", "asco_abstract_id"]).to_dict(orient='records')
     results = {}
     for rec in dat:
         _id = rec["gene"]
