@@ -10,7 +10,7 @@ def load_Civic(data_folder):
     dat = dat.drop(columns=["start2", "stop2", "asco_abstract_id"]).to_dict(orient='records')
     results = {}
     for rec in dat:
-        _id = rec["gene"]
+        _id = rec["evidence_civic_url"]
         process_key = lambda k: k.replace(" ","_").lower()
         rec = dict_convert(rec,keyfn=process_key)
         rec = dict_sweep(rec,vals=[np.nan])
